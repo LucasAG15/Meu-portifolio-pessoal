@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Início | Portfólio{% endblock %}
+
+{% block content %}
+<section class="hero fade-in">
+    <img src="{{ url_for('static', filename='images/perfil.jpg') }}" alt="Foto de perfil" class="profile-pic">
+
+    <h1>Lucas Alves</h1>
+    <p class="subtitle">Desenvolvedor • Full Stack • Criador de sites e Softwares</p>
+
+    <ul class="info-list">
+        <li>💻 Contato: 11 984686235</li>
+       <li> ⭐ <a href="https://github.com/LucasAG15" target="_blank">Github</a></li>
+       <li> 🌐<a href="https://www.instagram.com/lucasdev15/" target="_blank">Instagram</a></li>
+       <li> 💼<a href="" target="_blank">Linkedin</a></li>
+    </ul>
+
+    <div class="buttons">
+        <a href="{{ url_for('main.projetos') }}" class="btn">Projetos Python</a>
+        <a href="{{ url_for('main.contato') }}" class="btn outline">Projetos C</a>
+    </div>
+</section>
+
+<section class="scroll-section">
+    <h2>Sobre Mim</h2>
+    <p>
+        Sou um desenvolvedor focado em soluções práticas, aprendizado contínuo e
+        criação de projetos que realmente são uteis para qualquer area.
+
+        Estou sempre disposto a aprender coisas novas, tenho uma paixão por essa
+        area e pretendo dar meu sangue por ela e estou sempre a disposição.
+    </p>
+</section>
+{% endblock %}
